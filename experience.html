@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Experience | Aadarsha Nanthakumar</title>
+  <title>Education &amp; Skills | Aadarsha Nanthakumar</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     :root {
@@ -85,42 +85,47 @@
       margin-bottom: 1.2rem;
     }
 
+    .grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.4fr);
+      gap: 1.4rem;
+    }
+
     .card {
       background: rgba(15,23,42,0.98);
       border-radius: var(--radius-lg);
       border: 1px solid var(--border);
       padding: 1.3rem 1.4rem;
-      margin-bottom: 1rem;
       box-shadow: var(--shadow-soft);
     }
 
-    .card-header {
-      display: flex;
-      justify-content: space-between;
-      gap: 1rem;
-      margin-bottom: 0.5rem;
+    .edu-item {
+      margin-bottom: 0.9rem;
     }
 
-    .card-title {
-      font-size: 1rem;
+    .edu-title {
+      font-size: 0.98rem;
       font-weight: 600;
     }
 
-    .card-meta {
+    .edu-meta {
       font-size: 0.88rem;
       color: var(--muted);
-      text-align: right;
-      white-space: nowrap;
     }
 
-    ul {
+    .skills-title {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .skills-block {
       font-size: 0.9rem;
       color: #d1d5db;
-      padding-left: 1.1rem;
-      margin-top: 0.2rem;
+      margin-bottom: 0.9rem;
     }
-
-    li { margin-bottom: 0.3rem; }
 
     footer {
       margin-top: 2.2rem;
@@ -131,10 +136,9 @@
       text-align: center;
     }
 
-    @media (max-width: 720px) {
+    @media (max-width: 800px) {
       .nav-inner { flex-direction: column; align-items: flex-start; }
-      .card-header { flex-direction: column; align-items: flex-start; }
-      .card-meta { text-align: left; }
+      .grid { grid-template-columns: minmax(0, 1fr); }
     }
   </style>
 </head>
@@ -145,65 +149,42 @@
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="experience.html" class="active">Experience</a></li>
+          <li><a href="experience.html">Experience</a></li>
           <li><a href="projects.html">Projects</a></li>
-          <li><a href="education.html">Education &amp; Skills</a></li>
+          <li><a href="education.html" class="active">Education &amp; Skills</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <div class="page">
-    <h1>EXPERIENCE</h1>
+    <h1>EDUCATION &amp; SKILLS</h1>
 
-    <div class="card">
-      <div class="card-header">
-        <div class="card-title">
-          Systems Verification Engineer II, Cepheid, Sunnyvale CA
+    <div class="grid">
+      <div class="card">
+        <div class="edu-item">
+          <div class="edu-title">M.S Masters of Science, Biomedical Engineering</div>
+          <div class="edu-meta">Aug 2021 - Aug 2023</div>
+          <div class="edu-meta">San Jose State University</div>
         </div>
-        <div class="card-meta">
-          Jun 2023 - Present
+        <div class="edu-item">
+          <div class="edu-title">B.E Bachelor of Engineering, Biomedical Engineering</div>
+          <div class="edu-meta">Jun 2016 - Apr 2020</div>
+          <div class="edu-meta">SSN College of Engineering</div>
         </div>
       </div>
-      <ul>
-        <li>Developed verification strategies and traceability plans derived from risk assessments, collaborating with cross-functional R&amp;D teams to ensure design and clinical requirements were met.</li>
-        <li>Executed functional, performance, and regression testing on hardware and firmware subsystems while authoring Agile-aligned documentation that improved traceability and regression efficiency.</li>
-        <li>Supported early-stage design development by assessing feasibility, planning tests, and analyzing system integration, enabling informed new-feature design reviews.</li>
-        <li>Represented the verification team across multiple projects, communicating testing needs clearly and maintaining alignment with cross-functional development goals.</li>
-        <li>Organized SME discussions and participated in design reviews, providing feedback that supported design refinement, manufacturability, and overall engineering clarity.</li>
-        <li>Applied analytical methods and Python-based automation to evaluate test data, troubleshoot anomalies, and drive design improvements and process optimizations.</li>
-        <li>Mentored interns by guiding them through project workflows, assigning verification tasks, and ensuring understanding of lab practices and documentation standards.</li>
-      </ul>
-    </div>
 
-    <div class="card">
-      <div class="card-header">
-        <div class="card-title">
-          Optical Engineer Intern, Cepheid
+      <div class="card">
+        <div class="skills-title">Skills</div>
+        <div class="skills-block">
+          <strong>Tools and Programming::</strong>
+          Python, C++, Jupyter Notebooks, MATLAB, Helix, Minitab, JIRA
         </div>
-        <div class="card-meta">
-          May 2022 - May 2023
+        <div class="skills-block">
+          <strong>Core Quality and Regulatory skills:</strong>
+          FDA QSR (21 CFR 820), ISO 13485 (QMS), ISO 14971 (Risk Management), Design Controls, Traceability &amp; Requirements Mapping, Technical Documentation for Regulated Devices, GLP, Good Documentation Practices, Verification Strategy &amp; Risk-Based Test Planning, Software/Hardware Integration Testing, Support for internal audits &amp; SME review cycles
         </div>
       </div>
-      <ul>
-        <li>Supported optical subsystem testing, alignment, and calibration using LabVIEW and optical instruments, improving signal precision and overall data accuracy.</li>
-        <li>Collaborated with system integration teams to conduct pre-design verification testing and document findings that informed early design decisions.</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <div class="card-header">
-        <div class="card-title">
-          Graduate Student Researcher, Department of Biomedical Engineering, SJSU
-        </div>
-        <div class="card-meta">
-          Aug 2021 - May 2022
-        </div>
-      </div>
-      <ul>
-        <li>Designed and executed mechanical heart valve experiments using thrombogenicity testing systems, and analyzing performance data with MATLAB and Arduino.</li>
-        <li>Presented results through the Cardiolab Journal Club, contributing to ongoing research and supporting data-driven project advancement.</li>
-      </ul>
     </div>
 
     <footer>
