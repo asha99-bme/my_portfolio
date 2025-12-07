@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Experience | Aadarsha Nanthakumar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    /* Same style as index (shortened) */
+    :root {
+      --bg: #020617;
+      --card: #020617;
+      --accent: #3b82f6;
+      --accent-soft: rgba(59, 130, 246, 0.12);
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --border: #1f2937;
+      --radius-lg: 18px;
+      --radius-pill: 999px;
+      --shadow-soft: 0 18px 40px rgba(15, 23, 42, 0.7);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+      background: radial-gradient(circle at top, #0b1120 0, #020617 50%, #000 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header {
+      position: sticky; top: 0; z-index: 20;
+      backdrop-filter: blur(16px);
+      background: linear-gradient(to bottom, rgba(2,6,23,0.98), rgba(2,6,23,0.85), transparent);
+      border-bottom: 1px solid rgba(15, 23, 42, 0.95);
+    }
+
+    .nav-inner {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 0.8rem 1.3rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .nav-brand {
+      font-weight: 600;
+      font-size: 0.95rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    nav ul {
+      display: flex;
+      gap: 1.2rem;
+      list-style: none;
+      font-size: 0.9rem;
+    }
+
+    nav a {
+      color: var(--muted);
+      padding: 0.2rem 0;
+      border-bottom: 1px solid transparent;
+    }
+
+    nav a:hover { color: var(--text); border-bottom-color: var(--accent); }
+    nav a.active { color: var(--text); border-bottom-color: var(--accent); }
+
+    .page {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 2rem 1.3rem 3rem;
+    }
+
+    h1 {
+      font-size: 1.4rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 1.2rem;
+    }
+
+    .card {
+      background: rgba(15,23,42,0.98);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      padding: 1.3rem 1.4rem;
+      margin-bottom: 1rem;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .card-title { font-size: 1rem; font-weight: 600; }
+    .card-subtitle { font-size: 0.88rem; color: var(--muted); }
+    .card-meta { font-size: 0.8rem; color: var(--muted); white-space: nowrap; }
+
+    ul {
+      font-size: 0.9rem;
+      color: #d1d5db;
+      padding-left: 1.1rem;
+      margin-top: 0.4rem;
+    }
+
+    ul li { margin-bottom: 0.3rem; }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.6rem;
+    }
+
+    .pill {
+      padding: 0.15rem 0.6rem;
+      border-radius: var(--radius-pill);
+      background: var(--accent-soft);
+      border: 1px solid rgba(59, 130, 246, 0.45);
+      font-size: 0.72rem;
+    }
+
+    footer {
+      margin-top: 2.2rem;
+      padding-top: 1.3rem;
+      border-top: 1px solid rgba(31,41,55,0.9);
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    @media (max-width: 720px) {
+      .nav-inner { flex-direction: column; align-items: flex-start; }
+      .card-header { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-inner">
+      <div class="nav-brand">Aadarsha&nbsp;Nanthakumar</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="experience.html" class="active">Experience</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="education.html">Education & Skills</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page">
+    <h1>Experience</h1>
+
+    <div class="card">
+      <div class="card-header">
+        <div>
+          <div class="card-title">Systems Verification Engineer II</div>
+          <div class="card-subtitle">Cepheid · Sunnyvale, CA</div>
+        </div>
+        <div class="card-meta">Jun 2023 – Present</div>
+      </div>
+      <ul>
+        <li>Plan and execute verification for integrated hardware–software diagnostic systems based on risk and requirements.</li>
+        <li>Maintain traceability between requirements, tests, and results within Design Control frameworks.</li>
+        <li>Provide test evidence and system-level feedback into design and code reviews.</li>
+        <li>Use Python and analytical methods to review data, investigate issues, and support design improvements.</li>
+        <li>Mentor interns on workflows, documentation, and lab practices.</li>
+      </ul>
+      <div class="pill-row">
+        <span class="pill">System verification</span>
+        <span class="pill">Risk-based testing</span>
+        <span class="pill">Requirements & traceability</span>
+        <span class="pill">Python analysis</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div>
+          <div class="card-title">Optical Engineer Intern</div>
+          <div class="card-subtitle">Cepheid</div>
+        </div>
+        <div class="card-meta">May 2022 – May 2023</div>
+      </div>
+      <ul>
+        <li>Supported optical subsystem testing, alignment, and calibration activities.</li>
+        <li>Contributed to early verification work and documented findings for design teams.</li>
+      </ul>
+      <div class="pill-row">
+        <span class="pill">Optical testing</span>
+        <span class="pill">Alignment & calibration</span>
+        <span class="pill">Lab instrumentation</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div>
+          <div class="card-title">Graduate Student Researcher</div>
+          <div class="card-subtitle">Biomedical Engineering · San José State University</div>
+        </div>
+        <div class="card-meta">Aug 2021 – May 2022</div>
+      </div>
+      <ul>
+        <li>Conducted experiments on mechanical heart valves using thrombogenicity testing setups.</li>
+        <li>Analyzed experimental data using MATLAB / Arduino and presented results to the research group.</li>
+      </ul>
+      <div class="pill-row">
+        <span class="pill">Mechanical heart valves</span>
+        <span class="pill">MATLAB</span>
+        <span class="pill">Experimental design</span>
+      </div>
+    </div>
+
+    <footer>
+      © <span id="year"></span> Aadarsha&nbsp;Nanthakumar
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
