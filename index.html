@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Aadarsha Nanthakumar | Systems & Verification</title>
+  <title>Aadarsha Nanthakumar | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Portfolio of Aadarsha Nanthakumar, Systems Verification Engineer working on medical device systems and verification strategy." />
+  <meta name="description" content="Portfolio of Aadarsha Nanthakumar, Systems Verification Engineer in medical devices." />
   <style>
     :root {
       --bg: #020617;
@@ -12,7 +12,6 @@
       --card-soft: #020617ee;
       --accent: #3b82f6;
       --accent-soft: rgba(59, 130, 246, 0.12);
-      --accent-soft-2: rgba(56, 189, 248, 0.13);
       --text: #e5e7eb;
       --muted: #9ca3af;
       --border: #1f2937;
@@ -90,8 +89,6 @@
       padding: 2.1rem 1.3rem 3rem;
     }
 
-    /* HERO */
-
     .hero {
       padding: 1.9rem 1.7rem;
       border-radius: 26px;
@@ -130,18 +127,18 @@
     }
 
     .hero-title {
-      font-size: 2.5rem;
+      font-size: 2.4rem;
       line-height: 1.12;
       margin-bottom: 0.4rem;
     }
 
-    .hero-tagline {
+    .hero-subtitle {
       font-size: 1.02rem;
       color: #cbd5f5;
       margin-bottom: 0.9rem;
     }
 
-    .hero-subtitle {
+    .hero-body {
       font-size: 0.95rem;
       color: var(--muted);
       margin-bottom: 1.3rem;
@@ -220,174 +217,22 @@
       margin-bottom: 0.15rem;
     }
 
-    /* STATS STRIP */
-
-    .stats-strip {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 0.9rem;
-      margin-top: 1.9rem;
-    }
-
-    .stat-card {
-      padding: 0.8rem 1rem;
-      border-radius: 16px;
-      background: rgba(15,23,42,0.96);
-      border: 1px solid rgba(30,64,175,0.8);
-      font-size: 0.9rem;
-    }
-
-    .stat-number {
-      font-size: 1.3rem;
-      font-weight: 600;
-      margin-bottom: 0.1rem;
-    }
-
-    .stat-label {
-      font-size: 0.78rem;
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: 0.14em;
-    }
-
-    /* SECTIONS */
-
     .section {
       margin-top: 2.4rem;
     }
 
-    .section-header {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      gap: 1rem;
-      margin-bottom: 1rem;
-    }
-
-    .section-title {
-      font-size: 1rem;
+    .section h2 {
+      font-size: 0.95rem;
       text-transform: uppercase;
       letter-spacing: 0.16em;
       color: var(--muted);
+      margin-bottom: 0.7rem;
     }
 
-    .section-link {
-      font-size: 0.85rem;
-      color: var(--muted);
-    }
-
-    .section-link a { color: var(--accent); }
-
-    .focus-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 1rem;
-    }
-
-    .focus-card {
-      background: rgba(15,23,42,0.98);
-      border-radius: 18px;
-      border: 1px solid var(--border);
-      padding: 1rem 1rem;
-      font-size: 0.88rem;
-    }
-
-    .focus-title {
-      font-size: 0.95rem;
-      font-weight: 600;
-      margin-bottom: 0.35rem;
-    }
-
-    .focus-chip {
-      display: inline-block;
-      margin-top: 0.5rem;
-      padding: 0.14rem 0.6rem;
-      border-radius: var(--radius-pill);
-      font-size: 0.7rem;
-      background: var(--accent-soft);
-      border: 1px solid rgba(59,130,246,0.4);
-    }
-
-    .featured-card {
-      margin-top: 0.5rem;
-      background:
-        radial-gradient(circle at top right, rgba(56,189,248,0.18), transparent 55%),
-        rgba(15,23,42,0.98);
-      border-radius: 20px;
-      border: 1px solid var(--border);
-      padding: 1.1rem 1.2rem;
-      display: grid;
-      grid-template-columns: minmax(0, 1.6fr) minmax(0, 0.9fr);
-      gap: 1rem;
-      font-size: 0.9rem;
-    }
-
-    .featured-label {
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      color: var(--muted);
-      margin-bottom: 0.2rem;
-    }
-
-    .featured-title {
-      font-size: 1rem;
-      font-weight: 600;
-      margin-bottom: 0.3rem;
-    }
-
-    .pill-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-      margin-top: 0.6rem;
-    }
-
-    .pill {
-      padding: 0.16rem 0.6rem;
-      border-radius: var(--radius-pill);
-      background: var(--accent-soft-2);
-      border: 1px solid rgba(56,189,248,0.4);
-      font-size: 0.72rem;
-    }
-
-    .featured-cta {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      gap: 0.6rem;
-      font-size: 0.85rem;
-      color: var(--muted);
-    }
-
-    .now-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 1rem;
-    }
-
-    .now-card {
-      background: rgba(15,23,42,0.98);
-      border-radius: 18px;
-      border: 1px solid var(--border);
-      padding: 1rem 1.05rem;
-      font-size: 0.9rem;
-    }
-
-    .now-title {
-      font-size: 0.95rem;
-      font-weight: 600;
-      margin-bottom: 0.4rem;
-    }
-
-    .now-list {
-      padding-left: 1.05rem;
-      margin-top: 0.3rem;
-      font-size: 0.88rem;
+    .section p {
+      font-size: 0.93rem;
       color: #d1d5db;
     }
-
-    .now-list li { margin-bottom: 0.25rem; }
 
     footer {
       margin-top: 2.7rem;
@@ -404,18 +249,10 @@
         padding: 1.5rem 1.4rem;
       }
       .hero-title { font-size: 2.1rem; }
-      .stats-strip { grid-template-columns: repeat(3,minmax(0,1fr)); }
-      .focus-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
-      .featured-card {
-        grid-template-columns: minmax(0,1fr);
-      }
     }
 
     @media (max-width: 720px) {
       .nav-inner { flex-direction: column; align-items: flex-start; }
-      .stats-strip { grid-template-columns: minmax(0,1fr); }
-      .focus-grid { grid-template-columns: minmax(0,1fr); }
-      .now-grid { grid-template-columns: minmax(0,1fr); }
     }
   </style>
 </head>
@@ -428,37 +265,35 @@
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="experience.html">Experience</a></li>
           <li><a href="projects.html">Projects</a></li>
-          <li><a href="education.html">Education & Skills</a></li>
+          <li><a href="education.html">Education &amp; Skills</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <div class="page">
-    <!-- HERO -->
     <section class="hero">
       <div>
         <div class="hero-pill">
           <span class="hero-dot"></span>
           Systems · Verification · Medical Devices
         </div>
-        <h1 class="hero-title">I design and verify how medical systems behave.</h1>
-        <p class="hero-tagline">
-          I work at the boundary between hardware, firmware, and clinical reality—translating requirements
-          into verification strategies for complex diagnostic platforms.
-        </p>
+        <h1 class="hero-title">Aadarsha Nanthakumar</h1>
         <p class="hero-subtitle">
-          Based in the Bay Area, currently a Systems Verification Engineer II at Cepheid, with a
-          biomedical engineering background and hands-on experience in lab, optics, and regulated
-          environments.
+          Systems Verification Engineer II, Cepheid, Sunnyvale CA
+        </p>
+        <p class="hero-body">
+          I work on integrated hardware–firmware diagnostic systems in regulated environments, and I use this site
+          to collect my experience, projects, and skills in one place.
         </p>
         <div class="hero-actions">
-          <a href="projects.html" class="btn btn-primary">Explore Projects ↗</a>
-          <a href="experience.html" class="btn btn-ghost">View Experience</a>
-          <a href="AadarshaNanthakumar_RnDResume.pdf" class="btn btn-ghost" download>Download Résumé ⬇</a>
+          <a href="experience.html" class="btn btn-primary">View Experience</a>
+          <a href="projects.html" class="btn btn-ghost">View Projects</a>
+          <a href="resume.pdf" class="btn btn-ghost" download>Download Résumé ⬇</a>
         </div>
         <p class="hero-meta">
           Email: <a href="mailto:s.n.aadarsha@gmail.com">s.n.aadarsha@gmail.com</a> ·
+          Phone: <a href="tel:+16692121560">6692121560</a> ·
           <a href="https://www.linkedin.com/in/aadarshananthakumar" target="_blank">LinkedIn</a> ·
           <a href="https://github.com/asha99-bme" target="_blank">GitHub</a>
         </p>
@@ -466,144 +301,33 @@
 
       <div class="hero-right">
         <div class="mini-card">
-          <div class="mini-label">Current</div>
-          <div class="mini-value">Systems Verification Engineer II</div>
-          <div>Cepheid · Molecular diagnostics</div>
+          <div class="mini-label">Experience</div>
+          <div class="mini-value">Systems Verification · Optics · Research</div>
+          <div>Medical diagnostics, optical subsystems, mechanical heart valves, biosensors.</div>
         </div>
         <div class="mini-card">
-          <div class="mini-label">Domains</div>
-          <div class="mini-value">Diagnostic systems · Optics · Research</div>
-          <div>Mechanical heart valves · Biosensors · Imaging</div>
+          <div class="mini-label">Education</div>
+          <div class="mini-value">M.S. &amp; B.E. in Biomedical Engineering</div>
+          <div>San Jose State University · SSN College of Engineering.</div>
         </div>
         <div class="mini-card">
           <div class="mini-label">Standards</div>
-          <div class="mini-value">ISO 13485 · 21 CFR 820 · ISO 14971</div>
-          <div>Design Controls · Traceability</div>
+          <div class="mini-value">FDA QSR · ISO 13485 · ISO 14971</div>
+          <div>Design Controls, traceability, verification strategy &amp; risk-based planning.</div>
         </div>
       </div>
     </section>
 
-    <!-- SNAPSHOT -->
-    <section class="stats-strip">
-      <div class="stat-card">
-        <div class="stat-number">2+ yrs</div>
-        <div class="stat-label">Systems Verification in MedTech</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number">3</div>
-        <div class="stat-label">Core tracks · systems · optics · research</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number">3</div>
-        <div class="stat-label">Continents of collaborators so far</div>
-      </div>
-    </section>
-
-    <!-- FOCUS AREAS -->
     <section class="section">
-      <div class="section-header">
-        <h2 class="section-title">Focus Areas</h2>
-        <div class="section-link">
-          Deeper details live in <a href="experience.html">Experience</a> and <a href="projects.html">Projects</a>.
-        </div>
-      </div>
-
-      <div class="focus-grid">
-        <div class="focus-card">
-          <div class="focus-title">System-level Verification</div>
-          <p>
-            From requirements breakdown to test design, I build verification approaches for integrated
-            hardware–firmware diagnostic systems, with traceability and risk built in from the start.
-          </p>
-          <span class="focus-chip">Reqs → Risks → Tests → Evidence</span>
-        </div>
-        <div class="focus-card">
-          <div class="focus-title">Data & Debug Thinking</div>
-          <p>
-            I use Python, MATLAB, and lab instrumentation to turn failures and edge cases into concrete
-            design feedback instead of just “test failed” notes.
-          </p>
-          <span class="focus-chip">Python · MATLAB · Lab workflows</span>
-        </div>
-        <div class="focus-card">
-          <div class="focus-title">Research-Informed Engineering</div>
-          <p>
-            Work in thrombogenicity, vocal fold models, and biosensors gives me a habit of treating devices
-            like experiments: define, measure, iterate.
-          </p>
-          <span class="focus-chip">Mechanical heart valves · Biosensors</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- FEATURED PROJECT -->
-    <section class="section">
-      <div class="section-header">
-        <h2 class="section-title">Featured Work</h2>
-        <div class="section-link">
-          See more on <a href="projects.html">Projects</a>.
-        </div>
-      </div>
-
-      <div class="featured-card">
-        <div>
-          <div class="featured-label">Featured project</div>
-          <div class="featured-title">Bone Fracture Detection from X-ray Images</div>
-          <p>
-            An exploration of classical computer vision for fracture indication, implemented in both MATLAB
-            and Python (OpenCV). The project compares pipelines and shows how tooling choices affect
-            debugging and explainability.
-          </p>
-          <div class="pill-row">
-            <span class="pill">Medical imaging</span>
-            <span class="pill">OpenCV</span>
-            <span class="pill">MATLAB</span>
-            <span class="pill">Pipeline thinking</span>
-          </div>
-        </div>
-        <div class="featured-cta">
-          <div>
-            <strong>Why it matters:</strong><br/>
-            Translating ambiguous images into more structured signals is very similar to debugging
-            emergent system behavior in medical devices.
-          </div>
-          <div>
-            <a href="https://github.com/asha99-bme/bone_fracture_detection" target="_blank">
-              View on GitHub ↗
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- NOW / NEXT -->
-    <section class="section">
-      <div class="section-header">
-        <h2 class="section-title">Now & Next</h2>
-      </div>
-
-      <div class="now-grid">
-        <div class="now-card">
-          <div class="now-title">Currently</div>
-          <ul class="now-list">
-            <li>Owning verification flows for Cepheid systems as Systems Verification Engineer II.</li>
-            <li>Refining Python tooling for test data review and faster defect triage.</li>
-            <li>Bridging conversations between firmware, systems, and assay teams.</li>
-          </ul>
-        </div>
-        <div class="now-card">
-          <div class="now-title">Next</div>
-          <ul class="now-list">
-            <li>Leaning deeper into robotics / intelligent systems in medtech.</li>
-            <li>Exploring how AI can make verification smarter instead of just larger.</li>
-            <li>Looking ahead to roles that sit at the intersection of systems, clinical use, and automation.</li>
-          </ul>
-        </div>
-      </div>
+      <h2>How to use this site</h2>
+      <p>
+        The sections in the navigation bar map directly to my résumé: all wording in Experience, Projects,
+        Education, and Skills is kept exactly as in my current resume, but presented in a more visual layout.
+      </p>
     </section>
 
     <footer>
-      © <span id="year"></span> Aadarsha&nbsp;Nanthakumar · Designed like a product, not just a résumé
+      © <span id="year"></span> Aadarsha&nbsp;Nanthakumar
     </footer>
   </div>
 
