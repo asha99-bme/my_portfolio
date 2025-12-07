@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Projects | Aadarsha Nanthakumar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #020617;
+      --card: #020617;
+      --accent: #3b82f6;
+      --accent-soft: rgba(59, 130, 246, 0.12);
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --border: #1f2937;
+      --radius-lg: 18px;
+      --radius-pill: 999px;
+      --shadow-soft: 0 18px 40px rgba(15, 23, 42, 0.7);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+      background: radial-gradient(circle at top, #0b1120 0, #020617 50%, #000 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header {
+      position: sticky; top: 0; z-index: 20;
+      backdrop-filter: blur(16px);
+      background: linear-gradient(to bottom, rgba(2,6,23,0.98), rgba(2,6,23,0.85), transparent);
+      border-bottom: 1px solid rgba(15, 23, 42, 0.95);
+    }
+
+    .nav-inner {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 0.8rem 1.3rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .nav-brand {
+      font-weight: 600;
+      font-size: 0.95rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    nav ul {
+      display: flex;
+      gap: 1.2rem;
+      list-style: none;
+      font-size: 0.9rem;
+    }
+
+    nav a {
+      color: var(--muted);
+      padding: 0.2rem 0;
+      border-bottom: 1px solid transparent;
+    }
+
+    nav a:hover { color: var(--text); border-bottom-color: var(--accent); }
+    nav a.active { color: var(--text); border-bottom-color: var(--accent); }
+
+    .page {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 2rem 1.3rem 3rem;
+    }
+
+    h1 {
+      font-size: 1.4rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 1.2rem;
+    }
+
+    .card {
+      background: rgba(15,23,42,0.98);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      padding: 1.3rem 1.4rem;
+      margin-bottom: 1rem;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .card-title {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .card-subtitle {
+      font-size: 0.86rem;
+      color: var(--muted);
+    }
+
+    .card-meta {
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .card-body {
+      font-size: 0.9rem;
+      color: #d1d5db;
+      margin-top: 0.3rem;
+    }
+
+    ul {
+      font-size: 0.9rem;
+      color: #d1d5db;
+      padding-left: 1.1rem;
+      margin-top: 0.4rem;
+    }
+
+    ul li { margin-bottom: 0.25rem; }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.6rem;
+    }
+
+    .pill {
+      padding: 0.15rem 0.6rem;
+      border-radius: var(--radius-pill);
+      background: var(--accent-soft);
+      border: 1px solid rgba(59,130,246,0.45);
+      font-size: 0.72rem;
+    }
+
+    footer {
+      margin-top: 2.2rem;
+      padding-top: 1.3rem;
+      border-top: 1px solid rgba(31,41,55,0.9);
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    @media (max-width: 720px) {
+      .nav-inner { flex-direction: column; align-items: flex-start; }
+      .card-header { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-inner">
+      <div class="nav-brand">Aadarsha&nbsp;Nanthakumar</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="education.html">Education & Skills</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page">
+    <h1>Projects</h1>
+
+    <!-- Bone Fracture Detection -->
+    <div class="card">
+      <div class="card-header">
+        <div>
+          <div class="card-title">Bone Fracture Detection from X-ray Images</div>
+          <div class="card-subtitle">
+            <a href="https://github.com/asha99-bme/bone_fracture_detection" target="_blank">
+              github.com/asha99-bme/bone_fracture_detection
+            </a>
+          </div>
+        </div>
+        <div class="card-meta">Python · MATLAB · OpenCV</div>
+      </div>
+      <div class="card-body">
+        Student project on automated bone fracture indication from X-ray images using classical
+        image-processing pipelines implemented in both MATLAB and Python (OpenCV). :contentReference[oaicite:3]{index=3}
+      </div>
+      <ul>
+        <li>Pre-processed X-ray images and extracted features relevant to potential fracture lines.</li>
+        <li>Implemented classical computer vision techniques in MATLAB and in Python with OpenCV.</li>
+        <li>Compared results and workflows between the two environments for robustness and reproducibility.</li>
+      </ul>
+      <div class="pill-row">
+        <span class="pill">Medical imaging</span>
+        <span class="pill">Classical CV</span>
+        <span class="pill">MATLAB</span>
+        <span class="pill">Python · OpenCV</span>
+      </div>
+    </div>
+
+    <!-- Pneumonia Detection -->
+    <div class="card">
+      <div class="card-header">
+        <div>
+          <div class="card-title">Pneumonia Detection (Udacity AI for Healthcare)</div>
+          <div class="card-subtitle">
+            <a href="https://github.com/asha99-bme/Pneumonia_Detection" target="_blank">
+              github.com/asha99-bme/Pneumonia_Detection
+            </a>
+          </div>
+        </div>
+        <div class="card-meta">AI for Healthcare</div>
+      </div>
+      <div class="card-body">
+        Project developed as part of the Udacity “AI for Healthcare” program, focused on building a
+        pneumonia detection pipeline. :contentReference[oaicite:4]{index=4}
+      </div>
+      <ul>
+        <li>Followed a structured workflow from data loading and preprocessing through model training and evaluation.</li>
+        <li>Documented assumptions, metrics, and limitations as part of the course requirements.</li>
+      </ul>
+      <div class="pill-row">
+        <span class="pill">AI for Healthcare</span>
+        <span class="pill">Model evaluation</span>
+        <span class="pill">Experiment tracking</span>
+      </div>
+    </div>
+
+    <!-- Portfolio / GitHub Pages -->
+    <div class="card">
+      <div class="card-header">
+        <div>
+          <div class="card-title">GitHub Portfolio & Pages</div>
+          <div class="card-subtitle">
+            <a href="https://github.com/asha99-bme/my_portfolio" target="_blank">
+              github.com/asha99-bme/my_portfolio
+            </a>
+          </div>
+        </div>
+        <div class="card-meta">HTML · GitHub Pages</div>
+      </div>
+      <div class="card-body">
+        Repository used to experiment with portfolio layouts and GitHub Pages configuration. :contentReference[oaicite:5]{index=5}
+      </div>
+      <ul>
+        <li>Configured a basic portfolio site using Markdown and GitHub Pages.</li>
+        <li>Iterated on content organization for projects and experience sections.</li>
+      </ul>
+      <div class="pill-row">
+        <span class="pill">GitHub Pages</span>
+        <span class="pill">Portfolio</span>
+      </div>
+    </div>
+
+    <!-- GitHub Skills Group -->
+    <div class="card">
+      <div class="card-header">
+        <div>
+          <div class="card-title">GitHub Skills Exercises</div>
+          <div class="card-subtitle">Practice repositories</div>
+        </div>
+        <div class="card-meta">GitHub Skills</div>
+      </div>
+      <div class="card-body">
+        Short exercise repositories created using GitHub Skills modules, covering topics like GitHub
+        introduction, Markdown, GitHub Pages, Codespaces, and pull request workflows. :contentReference[oaicite:6]{index=6}
+      </div>
+      <ul>
+        <li><a href="https://github.com/asha99-bme/skills-introduction-to-github" target="_blank">skills-introduction-to-github</a></li>
+        <li><a href="https://github.com/asha99-bme/skills-communicate-using-markdown" target="_blank">skills-communicate-using-markdown</a></li>
+        <li><a href="https://github.com/asha99-bme/skills-github-pages" target="_blank">skills-github-pages</a></li>
+        <li><a href="https://github.com/asha99-bme/skills-code-with-codespaces" target="_blank">skills-code-with-codespaces</a></li>
+        <li><a href="https://github.com/asha99-bme/skills-review-pull-requests" target="_blank">skills-review-pull-requests</a></li>
+      </ul>
+      <div class="pill-row">
+        <span class="pill">GitHub workflows</span>
+        <span class="pill">Markdown</span>
+        <span class="pill">Codespaces</span>
+        <span class="pill">GitHub Pages</span>
+      </div>
+    </div>
+
+    <footer>
+      © <span id="year"></span> Aadarsha&nbsp;Nanthakumar
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
