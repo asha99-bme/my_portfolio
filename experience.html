@@ -5,7 +5,6 @@
   <title>Experience | Aadarsha Nanthakumar</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    /* Same style as index (shortened) */
     :root {
       --bg: #020617;
       --card: #020617;
@@ -23,7 +22,7 @@
 
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
-      background: radial-gradient(circle at top, #0b1120 0, #020617 50%, #000 100%);
+      background: radial-gradient(circle at top, #0b1120 0, #020617 45%, #000 100%);
       color: var(--text);
       line-height: 1.6;
     }
@@ -79,7 +78,7 @@
     }
 
     h1 {
-      font-size: 1.4rem;
+      font-size: 1.1rem;
       letter-spacing: 0.16em;
       text-transform: uppercase;
       color: var(--muted);
@@ -99,36 +98,29 @@
       display: flex;
       justify-content: space-between;
       gap: 1rem;
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.5rem;
     }
 
-    .card-title { font-size: 1rem; font-weight: 600; }
-    .card-subtitle { font-size: 0.88rem; color: var(--muted); }
-    .card-meta { font-size: 0.8rem; color: var(--muted); white-space: nowrap; }
+    .card-title {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .card-meta {
+      font-size: 0.88rem;
+      color: var(--muted);
+      text-align: right;
+      white-space: nowrap;
+    }
 
     ul {
       font-size: 0.9rem;
       color: #d1d5db;
       padding-left: 1.1rem;
-      margin-top: 0.4rem;
+      margin-top: 0.2rem;
     }
 
-    ul li { margin-bottom: 0.3rem; }
-
-    .pill-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-      margin-top: 0.6rem;
-    }
-
-    .pill {
-      padding: 0.15rem 0.6rem;
-      border-radius: var(--radius-pill);
-      background: var(--accent-soft);
-      border: 1px solid rgba(59, 130, 246, 0.45);
-      font-size: 0.72rem;
-    }
+    li { margin-bottom: 0.3rem; }
 
     footer {
       margin-top: 2.2rem;
@@ -142,6 +134,7 @@
     @media (max-width: 720px) {
       .nav-inner { flex-direction: column; align-items: flex-start; }
       .card-header { flex-direction: column; align-items: flex-start; }
+      .card-meta { text-align: left; }
     }
   </style>
 </head>
@@ -154,74 +147,63 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="experience.html" class="active">Experience</a></li>
           <li><a href="projects.html">Projects</a></li>
-          <li><a href="education.html">Education & Skills</a></li>
+          <li><a href="education.html">Education &amp; Skills</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <div class="page">
-    <h1>Experience</h1>
+    <h1>EXPERIENCE</h1>
 
     <div class="card">
       <div class="card-header">
-        <div>
-          <div class="card-title">Systems Verification Engineer II</div>
-          <div class="card-subtitle">Cepheid · Sunnyvale, CA</div>
+        <div class="card-title">
+          Systems Verification Engineer II, Cepheid, Sunnyvale CA
         </div>
-        <div class="card-meta">Jun 2023 – Present</div>
+        <div class="card-meta">
+          Jun 2023 - Present
+        </div>
       </div>
       <ul>
-        <li>Plan and execute verification for integrated hardware–software diagnostic systems based on risk and requirements.</li>
-        <li>Maintain traceability between requirements, tests, and results within Design Control frameworks.</li>
-        <li>Provide test evidence and system-level feedback into design and code reviews.</li>
-        <li>Use Python and analytical methods to review data, investigate issues, and support design improvements.</li>
-        <li>Mentor interns on workflows, documentation, and lab practices.</li>
+        <li>Developed verification strategies and traceability plans derived from risk assessments, collaborating with cross-functional R&amp;D teams to ensure design and clinical requirements were met.</li>
+        <li>Executed functional, performance, and regression testing on hardware and firmware subsystems while authoring Agile-aligned documentation that improved traceability and regression efficiency.</li>
+        <li>Supported early-stage design development by assessing feasibility, planning tests, and analyzing system integration, enabling informed new-feature design reviews.</li>
+        <li>Represented the verification team across multiple projects, communicating testing needs clearly and maintaining alignment with cross-functional development goals.</li>
+        <li>Organized SME discussions and participated in design reviews, providing feedback that supported design refinement, manufacturability, and overall engineering clarity.</li>
+        <li>Applied analytical methods and Python-based automation to evaluate test data, troubleshoot anomalies, and drive design improvements and process optimizations.</li>
+        <li>Mentored interns by guiding them through project workflows, assigning verification tasks, and ensuring understanding of lab practices and documentation standards.</li>
       </ul>
-      <div class="pill-row">
-        <span class="pill">System verification</span>
-        <span class="pill">Risk-based testing</span>
-        <span class="pill">Requirements & traceability</span>
-        <span class="pill">Python analysis</span>
-      </div>
     </div>
 
     <div class="card">
       <div class="card-header">
-        <div>
-          <div class="card-title">Optical Engineer Intern</div>
-          <div class="card-subtitle">Cepheid</div>
+        <div class="card-title">
+          Optical Engineer Intern, Cepheid
         </div>
-        <div class="card-meta">May 2022 – May 2023</div>
+        <div class="card-meta">
+          May 2022 - May 2023
+        </div>
       </div>
       <ul>
-        <li>Supported optical subsystem testing, alignment, and calibration activities.</li>
-        <li>Contributed to early verification work and documented findings for design teams.</li>
+        <li>Supported optical subsystem testing, alignment, and calibration using LabVIEW and optical instruments, improving signal precision and overall data accuracy.</li>
+        <li>Collaborated with system integration teams to conduct pre-design verification testing and document findings that informed early design decisions.</li>
       </ul>
-      <div class="pill-row">
-        <span class="pill">Optical testing</span>
-        <span class="pill">Alignment & calibration</span>
-        <span class="pill">Lab instrumentation</span>
-      </div>
     </div>
 
     <div class="card">
       <div class="card-header">
-        <div>
-          <div class="card-title">Graduate Student Researcher</div>
-          <div class="card-subtitle">Biomedical Engineering · San José State University</div>
+        <div class="card-title">
+          Graduate Student Researcher, Department of Biomedical Engineering, SJSU
         </div>
-        <div class="card-meta">Aug 2021 – May 2022</div>
+        <div class="card-meta">
+          Aug 2021 - May 2022
+        </div>
       </div>
       <ul>
-        <li>Conducted experiments on mechanical heart valves using thrombogenicity testing setups.</li>
-        <li>Analyzed experimental data using MATLAB / Arduino and presented results to the research group.</li>
+        <li>Designed and executed mechanical heart valve experiments using thrombogenicity testing systems, and analyzing performance data with MATLAB and Arduino.</li>
+        <li>Presented results through the Cardiolab Journal Club, contributing to ongoing research and supporting data-driven project advancement.</li>
       </ul>
-      <div class="pill-row">
-        <span class="pill">Mechanical heart valves</span>
-        <span class="pill">MATLAB</span>
-        <span class="pill">Experimental design</span>
-      </div>
     </div>
 
     <footer>
